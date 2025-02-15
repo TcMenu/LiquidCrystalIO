@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.13)
+
 add_library(LiquidCrystalIO ../src/LiquidCrystalIO.cpp )
 
 target_compile_definitions(IoAbstraction
@@ -5,7 +7,7 @@ target_compile_definitions(IoAbstraction
 )
 
 target_include_directories(LiquidCrystalIO PUBLIC
-        ${PROJECT_SOURCE_DIR}/lib/LiquidCrystalIO/src
+        ../src
 )
 
 target_link_libraries(LiquidCrystalIO PUBLIC pico_stdlib pico_sync IoAbstraction)
