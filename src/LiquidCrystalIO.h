@@ -1,7 +1,7 @@
 #ifndef LiquidCrystal_h
 #define LiquidCrystal_h
 
-#if defined(IOA_USE_MBED) || defined(BUILD_FOR_PICO_CMAKE)
+#if defined(IOA_USE_MBED) || defined(BUILD_FOR_PICO_CMAKE)|| defined(BUILD_FOR_STM32CUBE_CMAKE) || defined(BUILD_FOR_NATIVE_PLATFORM)
 #include "PrintCompat.h"
 #else
 #include "Print.h"
